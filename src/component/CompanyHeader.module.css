@@ -1,0 +1,18 @@
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.companyLogoContainer {
+  align-items: flex-start;
+}
+.companyDetails {
+  align-items: center;
+}
+.companyAddress {
+  align-items: center;
+}
+.companyLogoImg {
+  height: 100px;
+  width: 100px;
+}

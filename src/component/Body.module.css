@@ -1,0 +1,12 @@
+.mainContainer {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.companyHeader {
+  flex: 1;
+}
+
+.footerContainer {
+  flex: 1;
+}
