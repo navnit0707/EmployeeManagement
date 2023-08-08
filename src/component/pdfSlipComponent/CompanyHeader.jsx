@@ -1,6 +1,6 @@
 import React from "react";
 import Styles from "./CompanyHeader.module.css";
-import companyLogo from "../assets/companyLogo.png";
+import companyLogo from "../../assets/companyLogo.png";
 export default function CompanyHeader({ month, year }) {
   return (
     <div className={Styles.mainContainer}>
