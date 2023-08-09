@@ -2,13 +2,14 @@ import React from "react";
 import Styles from "./Header.module.css";
 import companyLogo from "../../assets/companyLogo.png";
 import loginLogoutAtom from "../../store/loginLogoutAtom";
-import { useRecoilValue, useRecoilState } from "recoil";
+import { useRecoilState } from "recoil";
 export default function Header() {
-  const [text, setText] = useRecoilState(loginLogoutAtom);
+  const [loginLogout, setloginLogout] = useRecoilState(loginLogoutAtom);
 
   // const loginLogout = useRecoilValue(userActionLoginLogout);
   const handleLoginLogout = () => {
-    setText(!text);
+    setloginLogout(!loginLogout);
+    console.log(loginLogout);
   };
   return (
     <div className={Styles.mainContainer}>
@@ -21,12 +22,11 @@ export default function Header() {
       </div>
       <div className={Styles.loginLogoutContainer}>
         <div>
-          {text ? (
-            <button onClick={() => handleLoginLogout}>Logout</button>
+          {loginLogout ? (
+            <button onClick={handleLoginLogout}>Logout</button>
           ) : (
-            <button>Logout</button>
+            <button onClick={handleLoginLogout}>Login</button>
           )}
-          {console.log(loginLogoutAtom)}
         </div>
       </div>
     </div>
