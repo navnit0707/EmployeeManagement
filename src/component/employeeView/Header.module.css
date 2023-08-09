@@ -1,0 +1,17 @@
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: space-between;
+
+  align-items: flex-start;
+}
+.logoImage {
+  width: 40px;
+  height: 40px;
+}
+.loginLogoutContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
